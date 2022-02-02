@@ -1,0 +1,16 @@
+@import "theme";
+@import "bootstrap";
+@import "bootstrap-nightfall";
+
+.card-bg-cloud {
+    background-color: #262A2E;
+}
+
+.card-bg-cloud:hover {
+    box-shadow: 0 6px 3rem 0 rgb(38, 42, 47);
+}
+
+.navbar-bg {
+    background-color: #292d31;
+    border: 1px solid #252a2c;
+}

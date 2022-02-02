@@ -1,0 +1,14 @@
+@import "theme";
+@import "bootstrap";
+
+.card-bg-cloud {
+    background-color: #E5FFFF;
+}
+
+.card-bg-cloud:hover {
+    box-shadow: 0 6px 3rem 0 rgb(217, 232, 243);
+}
+
+.navbar-bg {
+    background-color: #F6F0FF;
+}
