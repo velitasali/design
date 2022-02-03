@@ -6,7 +6,7 @@ title: Design
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1>Design</h1>
+            <h1 class="fw-light">Design</h1>
             <p class="text-secondary">A design language for web.</p>
         </div>
         <div class="col-12 col-md-6 col-lg-4 mb-4">
@@ -42,35 +42,17 @@ title: Design
             <h2>Applied By</h2>
             <p class="text-secondary">These sites use <b>Design</b>.</p>
         </div>
+        {% for applier in site.appliers%}
         <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="card card-bg-cloud">
+            <div class="card bg-cloud">
                 <div class="card-body">
-                    <a  class="link" href="https://velitasali.com" target="_blank" rel="noopener noreferrer">
-                        <h2 class="card-title">velitasali.com</h2>
+                    <a  class="link" href="{{ applier.link }}" target="_blank" rel="noopener noreferrer">
+                        <h3 class="card-title">{{ applier.name }}</h3>
                     </a>
-                    <p class="card-text">Someone on the internet.</p>
+                    <p class="card-text">{{ applier.description }}</p>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div class="card card-bg-cloud">
-                <div class="card-body">
-                    <a  class="link" href="https://monora.org" target="_blank" rel="noopener noreferrer">
-                        <h2 class="card-title">monora.org</h2>
-                    </a>
-                    <p class="card-text">A workspace for building FOSS.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card card-bg-cloud">
-                <div class="card-body">
-                    <a  class="link" href="https://uprotocol.monora.org" target="_blank" rel="noopener noreferrer">
-                        <h2 class="card-title">uprotocol.monora.org</h2>
-                    </a>
-                    <p class="card-text">Someone on the internet.</p>
-                </div>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </div>

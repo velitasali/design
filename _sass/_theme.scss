@@ -29,6 +29,16 @@ h6 {
     font-weight: 700;
 }
 
+.bg-cloud {
+    border: transparent !important;
+    transition: box-shadow .4s ease-in-out;
+}
+
+.bigdot::after {
+    content: '\00B7';
+    font-size: 28pt;
+}
+
 .btn-directional:after {
     transition: all .2s ease-in-out;
     content: ">";
@@ -37,11 +47,6 @@ h6 {
 
 .btn-directional:hover:after {
     margin-left: .75em;
-}
-
-.card-bg-cloud {
-    border: transparent !important;
-    transition: box-shadow .4s ease-in-out;
 }
 
 .navbar-bg {
