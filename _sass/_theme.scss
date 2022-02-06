@@ -33,12 +33,20 @@ h6 {
     border: 0;
 }
 
-.bg-cloud .card-footer {
-    border: 0;
-}
-
 .bg-cloud.card:hover {
     z-index: 50;
+}
+
+.bg-cloud {
+    .card-footer {
+        border: 0;
+    }
+
+    .card-img, .card-img-top, .card-img-bottom {
+        :hover {
+            border-radius: $border-radius;
+        }
+    }
 }
 
 .bigdot::after {
