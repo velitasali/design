@@ -46,12 +46,10 @@ h6 {
     border: 0;
 }
 
-.bg-cloud .card-img,
-.bg-cloud .card-img-top,
-.bg-cloud .card-img-bottom {
-    :hover {
-        border-radius: $border-radius;
-    }
+.bg-cloud .card-img:hover,
+.bg-cloud .card-img-top:hover,
+.bg-cloud .card-img-bottom:hover {
+    border-radius: $border-radius;
 }
 
 .bigdot::after {
