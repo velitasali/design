@@ -8,12 +8,20 @@ $font-fmaily-monospace: "Source Code Pro",
 monospace;
 $link-decoration: none;
 
-a>img {
+@mixin transform-scale {
+    transform: scale(1.05);
+}
+
+@mixin transition-all {
     transition: all .2s ease-in-out;
 }
 
+a>img {
+    @include transition-all();
+}
+
 a:hover>img {
-    transform: scale(1.05);
+    @include transform-scale();
 }
 
 h1 {
@@ -36,20 +44,23 @@ h6 {
 .bg-cloud.card {
     transition: box-shadow .2s ease-in-out;
     border: 0;
+
+    .card-img, .card-img-top, .card-img-bottom {
+        @include transition-all();
+    }
 }
 
 .bg-cloud.card:hover {
     z-index: 50;
+
+    .card-img, .card-img-top, .card-img-bottom {
+        @include transform-scale();
+        border-radius: $border-radius;
+    }
 }
 
 .bg-cloud .card-footer {
     border: 0;
-}
-
-.bg-cloud .card-img:hover,
-.bg-cloud .card-img-top:hover,
-.bg-cloud .card-img-bottom:hover {
-    border-radius: $border-radius;
 }
 
 .bigdot::after {
