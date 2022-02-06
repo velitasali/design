@@ -31,7 +31,14 @@ h6 {
 
 .bg-cloud {
     border: transparent !important;
+}
+
+.bg-cloud.card {
     transition: box-shadow .4s ease-in-out;
+}
+
+.bg-cloud .card-footer {
+    border: transparent !important;
 }
 
 .bigdot::after {
