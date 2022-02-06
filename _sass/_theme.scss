@@ -12,7 +12,6 @@ a > img {
 
 a:hover > img {
     transform: scale(1.05);
-    border-radius: $border-radius;
 }
 
 h1 {
@@ -30,16 +29,22 @@ h6 {
 }
 
 .bg-cloud.card {
-    transition: box-shadow .4s ease-in-out;
+    transition: ease-in-out;
+    transition-duration: .4s;
+    transition-property: background-color box-shadow;
+    border: 0;
+}
+
+.bg-cloud .card-footer {
     border: 0;
 }
 
 .bg-cloud.card:hover {
     z-index: 50;
-}
 
-.bg-cloud .card-footer {
-    border: 0;
+    .card-img, .card-img-top, .card-img-bottom, .card-footer {
+        border-radius: $border-radius;
+    }
 }
 
 .bigdot::after {
