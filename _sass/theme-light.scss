@@ -6,7 +6,8 @@
 }
 
 .bg-cloud.card:hover {
-    box-shadow: 0 6px 3rem 0 rgb(217, 232, 243);
+    box-shadow: 0 1em 3em 0 rgb(217, 232, 243);
+    border-color: rgb(217, 232, 243) !important;
 }
 
 .navbar-bg {
