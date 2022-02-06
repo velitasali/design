@@ -6,7 +6,11 @@
 }
 
 .bg-cloud.card:hover {
-    box-shadow: 0 .5em 4em .5em #E5FFFF;
+    box-shadow: 0 .5em 7em 10em #E5FFFF;
+}
+
+.bg-cloud.card:hover .card-footer {
+    border-radius: $border-radius;
 }
 
 .navbar-bg {

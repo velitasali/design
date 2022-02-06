@@ -30,8 +30,12 @@ h6 {
 }
 
 .bg-cloud.card {
-    transition: box-shadow .2s ease-in-out;
+    transition: box-shadow .4s ease-in-out;
     border: 0;
+}
+
+.bg-cloud.card:hover {
+    z-index: 50;
 }
 
 .bg-cloud .card-footer {
