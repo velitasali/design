@@ -29,9 +29,7 @@ h6 {
 }
 
 .bg-cloud.card {
-    transition: ease-in-out;
-    transition-duration: .4s;
-    transition-property: background-color box-shadow z-index;
+    transition: box-shadow .2s ease-in-out;
     border: 0;
 }
 
@@ -41,10 +39,6 @@ h6 {
 
 .bg-cloud.card:hover {
     z-index: 50;
-
-    .card-img, .card-img-top, .card-img-bottom, .card-footer {
-        border-radius: $border-radius;
-    }
 }
 
 .bigdot::after {
