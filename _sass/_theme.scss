@@ -29,16 +29,13 @@ h6 {
     font-weight: 700;
 }
 
-.bg-cloud {
-    border-color: transparent !important;
-}
-
 .bg-cloud.card {
-    transition: box-shadow .4s ease-in-out;
+    transition: box-shadow .2s ease-in-out;
+    border: 0;
 }
 
 .bg-cloud .card-footer {
-    border-color: transparent !important;
+    border: 0;
 }
 
 .bigdot::after {
