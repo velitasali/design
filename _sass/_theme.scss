@@ -2,15 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 $border-radius: .5em;
-$font-family-sans-serif: "DM Sans", sans-serif;
-$font-fmaily-monospace: "Source Code Pro", monospace;
+$font-family-sans-serif: "DM Sans",
+sans-serif;
+$font-fmaily-monospace: "Source Code Pro",
+monospace;
 $link-decoration: none;
 
-a > img {
+a>img {
     transition: all .2s ease-in-out;
 }
 
-a:hover > img {
+a:hover>img {
     transform: scale(1.05);
 }
 
@@ -19,7 +21,10 @@ h1 {
     letter-spacing: -0.02em;
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
     font-weight: 600;
     letter-spacing: -0.03em;
 }
@@ -37,15 +42,15 @@ h6 {
     z-index: 50;
 }
 
-.bg-cloud {
-    .card-footer {
-        border: 0;
-    }
+.bg-cloud .card-footer {
+    border: 0;
+}
 
-    .card-img, .card-img-top, .card-img-bottom {
-        :hover {
-            border-radius: $border-radius;
-        }
+.bg-cloud .card-img,
+.bg-cloud .card-img-top,
+.bg-cloud .card-img-bottom {
+    :hover {
+        border-radius: $border-radius;
     }
 }
 
