@@ -8,6 +8,8 @@ $font-fmaily-monospace: "Source Code Pro",
 monospace;
 $link-decoration: none;
 
+$breadcrumb-divider: quote(">");
+
 @mixin transform-scale {
     transform: scale(1.05);
 }
