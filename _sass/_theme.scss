@@ -45,7 +45,6 @@ h6 {
 
 .bg-cloud.card {
     transition: box-shadow .2s ease-in-out;
-    border: 0;
 
     .card-img, .card-img-top, .card-img-bottom {
         @include transition-all();
@@ -61,7 +60,7 @@ h6 {
     }
 }
 
-.bg-cloud .card-footer {
+.bg-cloud.card, .bg-cloud .card-header, .bg-cloud .card-footer {
     border: 0;
 }
 
