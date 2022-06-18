@@ -2,12 +2,18 @@
 @import "bootstrap";
 @import "bootstrap-nightfall";
 
+$color-cloud: #363A3E;
+
 .bg-cloud {
     background-color: #262A2E;
 }
 
 .bg-cloud.card:hover {
-    box-shadow: 0 0 0 .25em #363A3E;
+    box-shadow: 0 0 0 .25em $color-cloud;
+}
+
+.bg-cloud.card, .bg-cloud .card-header, .bg-cloud .card-footer {
+    border-color: $color-cloud;
 }
 
 .navbar-bg {

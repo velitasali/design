@@ -1,12 +1,18 @@
 @import "theme";
 @import "bootstrap";
 
+$color-cloud: #D5EFEF;
+
 .bg-cloud {
     background-color: #E5FFFF;
 }
 
 .bg-cloud.card:hover {
-    box-shadow: 0 0 0 .25em #D5EFEF;
+    box-shadow: 0 0 0 .25em $color-cloud;
+}
+
+.bg-cloud.card, .bg-cloud .card-header, .bg-cloud .card-footer {
+    border-color: $color-cloud;
 }
 
 .navbar-bg {
