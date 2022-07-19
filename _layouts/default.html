@@ -21,7 +21,7 @@
                 <a href="{{ 'index.html' | relative_url }}">
                     <img class="symbolic-logo navbar-brand" style="width: 1.6rem;" />
                 </a>
-                <a href="{{ 'index.html' | relative_url }}" class="navbar-brand mx-auto mr-lg-3 ml-lg-0">
+                <a href="{{ 'index.html' | relative_url }}" class="navbar-brand mx-auto me-lg-3 ms-lg-0">
                     {{ site.title}}
                 </a>
                 <button class="border-0 navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -32,7 +32,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav justify-content-end ml-auto w-100">
+                    <ul class="navbar-nav w-100">
                         <!-- Enter a collapsable nav item-->
                         <li class="nav-item">
                             <a class="nav-link" href="https://github.com/velitasali/design">
@@ -52,6 +52,12 @@
                         </li>
                         <li class="nav-item"><a class="nav-link" href="{{ 'about' | relative_url }}">about</a></li>
                     </ul>
+                    <form class="d-flex my-2 my-lg-0" action="#" method="post" role="search">
+                        <div class="navbar-search input-group">
+                            <input type="text" name="search_text" class="form-control" required="" placeholder="Search..." aria-label="Search..." title="The search query" autofocus="" tabindex="0" maxlength="50" minlength="4" id="id_search_text">
+                            <button class="btn bg-primary text-white" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
                 </div>
             </nav>
         </header>

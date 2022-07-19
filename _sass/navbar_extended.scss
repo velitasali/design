@@ -1,0 +1,19 @@
+@include media-breakpoint-up(lg) {
+    .navbar-search * {
+        transition: all 200ms ease;
+    }
+
+    .navbar-search>*[type=submit] {
+        border-radius: 50% !important;
+    }
+
+    .navbar-search:hover>*[type=submit],
+    .navbar-search:focus-within>*[type=submit] {
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+
+    .navbar-search:not(:hover):not(:focus-within)>input[type=text] {
+        display: none;
+    }
+}

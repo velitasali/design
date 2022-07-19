@@ -3,9 +3,9 @@
 
 $border-radius: .5em;
 $font-family-sans-serif: "DM Sans",
-sans-serif;
+    sans-serif;
 $font-family-monospace: "Source Code Pro",
-monospace;
+    monospace;
 $link-decoration: none;
 
 $breadcrumb-divider: quote(">");
@@ -46,7 +46,9 @@ h6 {
 .bg-cloud.card {
     transition: box-shadow .2s ease-in-out;
 
-    .card-img, .card-img-top, .card-img-bottom {
+    .card-img,
+    .card-img-top,
+    .card-img-bottom {
         @include transition-all();
     }
 }
@@ -54,7 +56,9 @@ h6 {
 .bg-cloud.card:hover {
     z-index: 50;
 
-    .card-img, .card-img-top, .card-img-bottom {
+    .card-img,
+    .card-img-top,
+    .card-img-bottom {
         @include transform-scale();
         border-radius: $border-radius;
     }
